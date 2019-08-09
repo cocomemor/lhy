@@ -1,0 +1,183 @@
+{
+	"description" : "[img]http://oukk3n8fj.bkt.clouddn.com/17-8-13/60310781.jpg[/img]\n✔图片来自于[url=https://www.pixiv.net/]pixiv[/url]\n✔音乐来自于[url=http://music.163.com/]网易云音乐[/url]\n治愈系音乐循环壁纸合集 +3D雪花特效\n温暖的治愈系壁纸，送给温暖的你~\n\n首先向大佬们的经典作品致敬：\n ✔[url=http://steamcommunity.com/sharedfiles/filedetails/?id=823472685]underseamiku v1.21[/url]\n ✔[url=http://steamcommunity.com/sharedfiles/filedetails/?id=1082586397]Shelter 落樱特效+BGM 1080P[/url]\n ✔[url=http://steamcommunity.com/sharedfiles/filedetails/?id=921617616][4K]Audio Visualizer v0.5.2[/url]\n\nBGM:\n ✔缘之空 经典插曲[url=http://music.163.com/m/song?id=477982&userid=339607358]Old Memory[/url]\n ✔Key Sounds Label [url=http://music.163.com/m/song?id=760058&userid=339607358]Bloom of Youth[/url]\n ✔千本樱 钢琴伴奏[url=http://music.163.com/m/song?id=28253999&userid=339607358]勿念他归[/url] \n ✔ HAPPY BIRTHDAY[url=http://music.163.com/m/song?id=26116370&userid=339607358]君だったら[/url] \n ✔ 新海诚 君の名は。[url=http://music.163.com/m/song?id=426881502&userid=339607358]かたわれ時[/url] \n ✔音乐开启后无限循环 可在手动停止控制音乐进程 音量大小可调节 \n ✔BGM可在控制台选择，为了方便操作，引用了播放器控件在桌面右上角\n\nBG：\n ✔BG每33S变换一次\n ✔预置18张 [url=https://www.pixiv.net/]pixiv[/url]图片，来自P站画师。大佬们ID 难找，侵删 \n ✔部分BG预览图如上                 \n ✔为了保证流畅运行，请务必保证你的Wallpaper Engine开启高性能\n\n萌新不务正业试水 菜鸟第二次制作 欢迎大家批评指正,以便不断完善。\nDue to my limited experience and knowledge in programming, my work may contain mistakes. \nIf really so, anyone is pleased to point them out.\n\n\n\n\n❤其实，音乐很美~",
+	"file" : "index.html",
+	"general" : 
+	{
+		"properties" : 
+		{
+			"BGM_lhy": {
+				"order": 50,
+				"text": "BGM选项",
+				"type": "combo",
+				"options": [
+					{
+						"label": "🔀随机播放Random",
+						"value": 0
+					},
+					{
+						"label": "🎵.Old Memory",
+						"value": 1
+					},
+					{
+						"label": "🎵.Bloom of Youth",
+						"value": 2
+					},
+					{
+						"label": "🎵.瞬间的永恒",
+						"value": 3
+					},
+					{
+						"label": "🎵.勿念他归",
+						"value": 4
+					},
+					{
+						"label": "🎵.君だったら",
+						"value": 5
+					},
+					{
+						"label": "🎵.かたわれ時",
+						"value": 6
+					}
+				],
+				"value": 0
+			},
+			"Loop_lhy": {
+				"order": 48,
+				"text": "🔂循环模式(Loop)",
+				"type": "bool",
+				"value": true
+			},
+			"Play_lhy": {
+				"order": 47,
+				"text": "▶开启音乐(Play/pause)",
+				"type": "bool",
+				"value": false
+			},
+			"Volume_lhy": {
+				"order": 46,
+				"text": "📶音量Volume",
+				"type": "slider",
+				"max": 100,
+				"min": 0,
+				"value": 49
+			},
+			"designbyLHY" : 
+			{
+				"order" : 100,
+				"text" : "<br/><h4><b>感谢订阅</b></h4><span>Thanks for the subscription</span><br/>",
+				"type" : "bool",
+				"value" : false
+			},
+			"designbyLHYa" :
+			{
+				"order" : 1,
+				"text" : "<b>UP text entry:（上行自定义签名）</b><br/>",
+				"type" : "text"
+			},
+			"designbyLHYb" :
+			{
+				"order" : 4,
+				"text" : "<b>DOWN text entry:（下行自定义签名）</b><br/>",
+				"type" : "text"
+			},
+			"designbyLHY0" : 
+			{
+				"order" : 100,
+				"text" : "<br/><b>❤相关说明:</b><br/><span>✔这是治愈（致郁）系原版!</br>✔在Lite版的基础上增加了时钟插件!<br/>✔更多自定义内容请关注创意工坊讨论区!<br/>✔你需要用心去倾听音乐的美!</span><br/>",
+				"type" : "text",
+				"value" : false
+			},
+			"designbyLHY1" : 
+			{
+				"condition" : "designbyLHY.value == true",
+				"order" : 101,
+				"text" : "<br/><span>温暖的治愈系壁纸❤送给温暖的你<br/></span>",
+				"type" : "text"
+			},
+			"designbyLHY2" : 
+			{
+				"condition" : "designbyLHY.value == true",
+				"order" : 102,
+				"text" : "<br/><span>作者(The author)：CocoMemor</span>",
+				"type" : "text"
+			},
+			"designbyLHY3" : 
+			{
+				"condition" : "designbyLHY.value == true",
+				"order" : 103,
+				"text" : "<br/><span>邮箱(Email)：1051465447@qq.com</span>",
+				"type" : "text"
+			},
+			"designbyLHY4" : 
+			{
+				"condition" : "designbyLHY.value == true",
+				"order" : 104,
+				"text" : "<br/><span><b>Friendly Reminder:</b></span><br/><br/><span>萌新不务正业试水 菜鸟第二次制作 欢迎大家批评指正,以便不断完善。<br/>Due to my limited experience and knowledge in programming, my work may contain mistakes.<br/>If really so, anyone is pleased to point them out.</span><br/>",
+				"type" : "text"
+			},
+			"designbyLHY5" : 
+			{
+				"condition" : "designbyLHY.value == true",
+				"order" : 105,
+				"text" : "<b>❤愿这个世界对你温柔相待❤</b><br/>",
+				"type" : "bool",
+				"value" : false
+			},
+			"designbyLHY6" : 
+			{
+				"condition" : "designbyLHY.value == true && designbyLHY5.value == false",
+				"order" : 106,
+				"text" : "<br/><img src='../../../../workshop/content/431960/1108983160/mypic/LOGO1.png' width='250' height='250' />",
+				"type" : "text"
+			},
+			"designbyLHY7" : 
+			{
+				"condition" : "designbyLHY.value == true && designbyLHY5.value == true",
+				"order" : 107,
+				"text" : "<br/><img src='https://i.loli.net/2017/08/25/599efbb379735.jpg' width='275' height='350' />",
+				"type" : "text"
+			},
+			"diyText1" :
+			{
+				"order" : 2,
+				"text" : "Castro Script",
+				"type" : "textinput",
+				"value" : "Change yourself"
+			},
+			"diyText2" :
+			{
+				"order" : 6,
+				"text" : "Vtks Thx",
+				"type" : "textinput",
+				"value" : "Dream it possible"
+			},
+			"diyText3" :
+			{
+				"order" : 3,
+				"text" : "义启圣诞体",
+				"type" : "textinput",
+				"value" : ""
+			},
+			"diyText4" :
+			{
+				"order" : 7,
+				"text" : "义启心花怒放",
+				"type" : "textinput",
+				"value" : ""
+			},
+			"schemecolor" : 
+			{
+				"order" : 0,
+				"text" : "ui_browse_properties_scheme_color",
+				"type" : "color",
+				"value" : "0.9176470588235294 0 0.3686274509803922"
+			}
+		}
+	},
+	"preview" : "preview.jpg",
+	"tags" : [ "Anime" ],
+	"title" : "治愈系音乐循环壁纸合集 +3D雪花特效",
+	"type" : "web",
+	"visibility" : "public",
+	"workshopid" : 1108983160
+}

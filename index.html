@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>治愈系音乐循环壁纸合集 +3D雪花特效七夕版 by LHY~欢迎访问我的steam主页empty_lion</title>
+    <script src="myjs/jquery.min.js"></script>
+    <script src="myjs/snow.js"></script>
+    <script src="myjs/flipclock.js"></script>
+    <link href="mycss/style.css" type="text/css" rel="stylesheet">
+    <link href="mycss/flipclock.css" type="text/css" rel="stylesheet">
+    <style type="text/css">
+
+        @font-face {
+            font-family: 'yq1-lhy';
+            src: url(./myfont/en1_lhy.ttf);
+        }
+        @font-face {
+            font-family: 'yq-lhy';
+            src: url(./myfont/en_lhy.ttf);
+        }
+        @font-face {
+            font-family: 'yq2-lhy';
+            src: url(./myfont/lhy_font.ttf);
+        }
+        @font-face {
+            font-family: 'yq3-lhy';
+            src: url(./myfont/zhlove.ttf);
+        }
+    </style>
+</head>
+
+<body>
+<script src="myjs/mylhy.js"></script>
+<div class="lhy_bgcontainer"></div>
+
+    <div id="slideshow">
+            <img class="active" src="mypic/1.jpg"/>
+            <img  src="mypic/2.jpg"/>
+            <img  src="mypic/3.jpg"/>
+            <img  src="mypic/4.jpg"/>
+            <img  src="mypic/5.jpg"/>
+            <img  src="mypic/6.jpg"/>
+            <img  src="mypic/7.jpg"/>
+            <img  src="mypic/8.jpg"/>
+            <img  src="mypic/9.jpg"/>
+            <img  src="mypic/10.png"/>
+            <img  src="mypic/11.jpg"/>
+            <img  src="mypic/12.jpg"/>
+            <img  src="mypic/13.jpg"/>
+            <img  src="mypic/14.jpg"/>
+            <img  src="mypic/15.jpg"/>
+            <img  src="mypic/16.jpg"/>
+            <img  src="mypic/17.jpg"/>
+            <img  src="mypic/18.jpg"/>
+            <img  src="mypic/19.jpg"/>
+            <img  src="mypic/20.jpeg"/>
+
+    </div>
+
+
+
+<div id="text" style="margin-left:-70px;margin-right:auto;width:480px;position:relative;text-align:center;margin-bottom:60px;margin-top:-379px"><img style="width:30%;height:30%;margin-bottom:240px;margin-top:-35px" src="mypic/LOGO1.png"><p style="font-family:'yq-lhy';margin-top:-115px;margin-bottom:-170px;font-size:59px"><span  id="text01" style="font-family:'yq-lhy'">Change yourself</span><span id="text03" style="font-family:'yq2-lhy'"></span><span style="font-family:'yq-lhy'">.</span></p>
+        <p style="font-family:'yq1-lhy';margin-top:175px;margin-bottom:-10px;font-size:50px"><span id="text02" style="font-family:'yq1-lhy'">Dream it possible</span><span id="text04" style="font-family:'yq3-lhy'"></span><span style="font-family:'yq-lhy'">.</span></p></div>
+
+<div id="lhy_clock">
+
+        <div class="clock" style="margin-right:auto; margin-left:auto;margin-top:1px; position:fixed"></div>
+
+        <script type="text/javascript">
+            var clock;
+
+            $(document).ready(function() {
+                clock = $('.clock').FlipClock({
+                    clockFace: 'TwelveHourClock'
+                });
+            });
+        </script>
+    </div>
+<div>
+<script>//---------主角：轮播图函数-------------
+function slideshow() {
+    var slideshow=document.getElementById("slideshow"),
+        imgs=slideshow.getElementsByTagName("img"), //得到图片们
+        current=0; //current为当前活跃的图片编号
+
+    function slideOff() {
+        imgs[current].className=""; //图片淡出
+    }
+    function slideOn() {
+        imgs[current].className="active"; //图片淡入
+    }
+
+    function changeSlide() { //切换图片的函数
+        slideOff(); //图片淡出
+        current++; //自增1
+        if(current>=20) current=0;
+        slideOn(); //图片淡入
+    }
+
+    //每52.0s调用changeSlide函数进行图片轮播,单位为毫秒
+    var slideon=setInterval(changeSlide,52000);
+}
+
+slideshow();
+</script>
+
+</div>
+
+</body>
+</html>
